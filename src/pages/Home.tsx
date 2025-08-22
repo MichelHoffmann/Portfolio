@@ -7,7 +7,7 @@ import { ArrowDownToLine, MessageCircleMore } from "lucide-react";
 
 export function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-screen">
       <header className="bg-[var(--gray-300)] h-25 flex items-center justify-between px-15">
         <h1 className="text-[var(--purple-medium)] text-5xl">MH</h1>
         <nav>
@@ -31,7 +31,7 @@ export function Home() {
           </ul>
         </nav>
       </header>
-      <main className="flex-1 bg-[var(--gray-300)] flex justify-center items-center gap-45">
+      <main className="flex-1 bg-[var(--gray-300)] flex flex-col justify-center items-center gap-35 xl:flex-row xl:justify-around xl:gap-5">
         <section className="flex flex-col items-center justify-center gap-3 text-center">
           <img src={avatar} alt="Ilustração do Michel" className="mb-7" />
           <div className="text-white">
@@ -90,7 +90,7 @@ export function Home() {
               Vamos conversar
             </button>
           </div>
-          <p className="text-white text-justify w-180">
+          <p className="text-white text-justify px-15 max-w-200">
             Sou um desenvolvedor Front-End apaixonado por tecnologia. Iniciei
             minha jornada na programação web em 2022 estudando através da Udemy,
             Youtube e a comunidade Dev. Atualmente desenvolvo meus projetos
@@ -106,6 +106,9 @@ export function Home() {
           </button>
         </section>
       </main>
+      <footer className="w-screen h-7 bg-[var(--blue-gray)] flex justify-center items-center">
+        <p className="text-gray-400 text-center">Developed by Michel</p>
+      </footer>
     </div>
   );
 }
