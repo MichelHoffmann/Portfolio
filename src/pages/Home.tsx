@@ -4,33 +4,13 @@ import reactjs from "../assets/reactjs.png";
 import nodejs from "../assets/nodejs.png";
 import mongodb from "../assets/mongodb.png";
 import { ArrowDownToLine, MessageCircleMore } from "lucide-react";
+import { NavLink } from "react-router-dom";
+import Header from "../componets/Header";
 
 export function Home() {
   return (
     <div className="flex flex-col min-h-screen w-screen">
-      <header className="bg-[var(--gray-300)] h-25 flex items-center justify-between px-15">
-        <h1 className="text-[var(--purple-medium)] text-5xl">MH</h1>
-        <nav>
-          <ul className="flex gap-7">
-            <li>
-              <a
-                href="#"
-                className="text-white hover:text-[var(--purple-medium)] text-xl"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-white hover:text-[var(--purple-medium)] text-xl"
-              >
-                Contact me
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <main className="flex-1 bg-[var(--gray-300)] flex flex-col justify-center items-center gap-35 xl:flex-row xl:justify-around xl:gap-5">
         <section className="flex flex-col items-center justify-center gap-3 text-center">
           <img src={avatar} alt="Ilustração do Michel" className="mb-7" />
@@ -98,12 +78,13 @@ export function Home() {
             estou iniciando os meus estudos voltados para o back-end seguindo a
             mesma stack usando node JS.
           </p>
-          <button
-            className="bg-[var(--purple-dark)] text-white w-45 h-12 rounded-full border-1 border-[var(--purple-dark)] hover:bg-[var(--gray-300)] shadow-[0_0_39px_-5px_rgba(114,66,179,0.85)] 
-    transition duration-150 hover:cursor-pointer"
+          <NavLink
+            to="/projects"
+            className="flex justify-center items-center bg-[var(--purple-dark)] text-white w-45 h-12 rounded-full border-1 border-[var(--purple-dark)] hover:bg-[var(--gray-300)] shadow-[0_0_39px_-5px_rgba(114,66,179,0.85)] 
+    transition duration-150 hover:cursor-pointer mb-10"
           >
             Meus Projetos
-          </button>
+          </NavLink>
         </section>
       </main>
       <footer className="w-screen h-7 bg-[var(--blue-gray)] flex justify-center items-center">
