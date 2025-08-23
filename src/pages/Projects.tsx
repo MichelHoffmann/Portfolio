@@ -37,7 +37,7 @@ export function Projects() {
       <Header />
       <section className="bg-[var(--gray-300)] w-screen flex-1 flex flex-col justify-center items-center gap-20 text-left">
         <h1 className="text-white text-3xl">Trabalhos e projetos</h1>
-        <div className="relative w-full max-w-6xl h-180">
+        <div className="relative w-full xl:w-300">
           <img
             src={images[current].src}
             alt={images[current].name}

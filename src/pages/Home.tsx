@@ -62,7 +62,7 @@ export function Home() {
         </section>
 
         <section className="flex flex-col gap-10 items-center justify-center">
-          <div className="flex items-center justify-center gap-15">
+          <div className="flex items-center justify-center gap-6 sm:gap-15 md:gap-25">
             <a href="../../public/curriculo-michel.pdf" download={curriculo}>
               <button className="flex items-center justify-center gap-3 text-[var(--purple-medium)] text-xl transition-transform duration-300 hover:scale-110">
                 <ArrowDownToLine size={20} /> Baixar CV
