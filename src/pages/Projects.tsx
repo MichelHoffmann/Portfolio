@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Header from "../componets/Header";
-import runflow from "../assets/runflow.png";
+import runflow from "../assets/RunFlow.png";
 import ignitefeed from "../assets/IgniteFeed.png";
-import reactdo from "../assets/reactdo.png";
+import reactdo from "../assets/ReactDo.png";
 
 const images = [
   {
