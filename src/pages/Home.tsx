@@ -6,6 +6,7 @@ import mongodb from "../assets/mongodb.png";
 import { ArrowDownToLine, MessageCircleMore } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import Header from "../componets/Header";
+import curriculo from "../../public/curriculo-michel.pdf";
 
 export function Home() {
   return (
@@ -62,13 +63,17 @@ export function Home() {
 
         <section className="flex flex-col gap-10 items-center justify-center">
           <div className="flex items-center justify-center gap-15">
-            <button className="flex items-center justify-center gap-3 text-[var(--purple-medium)] text-xl transition-transform duration-300 hover:scale-110">
-              <ArrowDownToLine size={20} /> Baixar CV
-            </button>
-            <button className="flex items-center justify-center gap-3 text-[var(--purple-medium)] text-xl border-2 rounded-md p-3 transition-transform duration-300 hover:scale-110">
-              <MessageCircleMore size={20} />
-              Vamos conversar
-            </button>
+            <a href="../../public/curriculo-michel.pdf" download={curriculo}>
+              <button className="flex items-center justify-center gap-3 text-[var(--purple-medium)] text-xl transition-transform duration-300 hover:scale-110">
+                <ArrowDownToLine size={20} /> Baixar CV
+              </button>
+            </a>
+            <a href="https://wa.me/68981141671">
+              <button className="flex items-center justify-center gap-3 text-[var(--purple-medium)] text-xl border-2 rounded-md p-3 transition-transform duration-300 hover:scale-110">
+                <MessageCircleMore size={20} />
+                Vamos conversar
+              </button>
+            </a>
           </div>
           <p className="text-white text-justify px-15 max-w-200">
             Sou um desenvolvedor Front-End apaixonado por tecnologia. Iniciei
